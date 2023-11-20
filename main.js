@@ -134,7 +134,7 @@ function tinhHoaDonKH() {
   var phiDichVu = 0;
   if (khachHang === "ND") {
     ketQua += billND + serviceND + kenhCC * kenhCaoCap;
-  } else if (khachHang === "ND") {
+  } else if (khachHang === "DN") {
     phiDichVu = serviceDN + (conect > 10 ? (conect - 10) * serviceDNThem : 0);
     ketQua += billDN + phiDichVu + kenhCC * kenhCaoCapDN;
   }
