@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div>
+      <h3>Bài tập1: Quản lý tuyển sinh</h3>
+      <div class="">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-header">Quản lý tuyển sinh</div>
+              <div class="card-body">
+                <div class="form-group">
+                  <label for="">Điểm chuẩn của Hội Đồng</label>
+                  <input id="benchmark" class="form-control" />
+                </div>
+                <div class="form-group">
+                  <label for="">Môn thứ nhất</label>
+                  <input id="subject_1" class="form-control" />
+                </div>
+                <div class="form-group">
+                  <label for="">Môn thứ hai</label>
+                  <input id="subject_2" class="form-control" />
+                </div>
+                <div class="form-group">
+                  <label for="">Môn thứ ba</label>
+                  <input id="subject_3" class="form-control" />
+                </div>
+                <div class="form-group">
+                  <label>Khu vực:</label>
+                  <select class="form-control" id="area">
+                    <option>---Chọn khu vực---</option>
+                    <option value="2">Khu vực A</option>
+                    <option value="1">Khu vực B</option>
+                    <option value="0.5">Khu vực C</option>
+                    <option value="0">Không thuộc các khu vực trên</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="">Đối tượng dự thi</label>
+                  <select class="form-control" id="Contest">
+                    <option>---Chọn đối tượng---</option>
+                    <option value="2.5">Đối tượng 1</option>
+                    <option value="1.5">Đối tượng 2</option>
+                    <option value="1">Đối tượng 3</option>
+                    <option value="0">Không thuộc các đối tượng trên</option>
+                  </select>
+                </div>
+                <button id="submitB1" class="btn btn-danger">Tính toán</button>
+              </div>
+              <div id="footerB1" class="card-footer text-muted"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<hr>
+    <div>
+      <h3>Bài 2: Tính tiền điện</h3>
+      <div class="">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-header">Thông tin tiêu thụ điện</div>
+              <div class="card-body">
+                <div class="form-group">
+                  <label for="">Tên </label>
+                  <input id="name" class="form-control" />
+                </div>
+                <div class="form-group">
+                  <label for="">Số Kw</label>
+                  <input id="soKw" class="form-control" />
+                </div>
+                <button id="submitB2" class="btn btn-danger">Submit</button>
+              </div>
+              <div id="footerB2" class="card-footer text-muted"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+    <div>
+      <h3>Bài 3: Tính thuế thu nhập cá nhân</h3>
+      <div class="">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-header">Tính thuế thu nhập cá nhân</div>
+              <div class="card-body">
+                <div class="form-group">
+                  <label for="">Họ và tên </label>
+                  <input id="fullName" class="form-control" />
+                </div>
+                <div class="form-group">
+                  <label for="">Tổng thu nhập cả năm </label>
+                  <input id="yearlyIncome" class="form-control" />
+                </div>
+                <div class="form-group">
+                  <label for="">Số nngười phụ thuộc</label>
+                  <input id="person" class="form-control" />
+                </div>
+                <button id="submitB3" class="btn btn-danger">Submit</button>
+              </div>
+              <div id="footerB3" class="card-footer text-muted"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+    <div>
+      <h3>Bài 4: Tính tiền cap</h3>
+      <div class="">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-header">Tính tiền cap</div>
+              <div class="card-body">
+                <div class="form-group">
+                  <label for="">Mã khách hàng </label>
+                  <input id="maKH" class="form-control" />
+                </div>
+                <div class="form-group">
+                  <label>Khách hàng</label>
+                  <select class="form-control" id="khachHang" onchange="showHiddenConnect()">
+                    <option>---Chọn khách hàng---</option>
+                    <option value="ND">Nhà dân</option>
+                    <option value="DN">Doanh nghiệp</option>
+                  </select>
+                </div>
+                <div class="form-group" id="soKetNoiGroup">
+                  <label for="">Số kết nối </label>
+                  <input id="conect" class="form-control" />
+                </div>
+                <div class="form-group">
+                  <label for="">Số kênh cao cấp</label>
+                  <input id="kenhCC" class="form-control" />
+                </div>
+                <button id="submitB4" class="btn btn-danger">Submit</button>
+              </div>
+              <div id="footerB4" class="card-footer text-muted"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
